@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students - Courses</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/form-validation.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container" id ="Course-validation">
+    <!--   </div>
+       <table class="home-table">
+           <tr>
+               <th>Courses</th>
+               <td>Grade</td>
+           </tr>
+           <tr>
+               <th>Courses</th>
+               <td>Grade</td>
+           </tr>
+           <tr>
+               <th>Courses</th>
+               <td>Grade</td>
+           </tr>
+           <tr>
+               <th>Courses</th>
+               <td>Grade</td>
+           </tr>
+       </table>-->
+    <main class="container" role="main">
+        <div class="py-5 text-center">
+            <div class="photo-upload">
+                <img src="https://i1.sndcdn.com/avatars-000077093509-x8u6bp-t500x500.jpg" />
+                <input type="file"/>
+            </div>
+            <h2>Course Grade</h2>
+            <p class="lead">Grade Which you got in particular courses</p>
+            <a class="btn btn-lg btn-primary" role="button" onclick="fetch_data()">Fetch Data &raquo;</a>
+        </div>
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Course Id</th>
+                <th scope="col">Course name</th>
+                <th scope="col">Grade</th>
+            </tr>
+            </thead>
+            <tbody id="table_id_data">
+            </tbody>
+        </table>
+    </main>
+    <div class="col-md-12 text-center" style="margin-top:20px;">
+        <a href="dashboard.html">Back to Home</a>
+    </div>
+</div>
+
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/courses.js"></script>
+</html>
